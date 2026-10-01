@@ -4,7 +4,7 @@ set -eu
 PROJECT_NAME="code_typer"
 INSTALL_DIR=${CODE_TYPER_INSTALL_DIR:-"$HOME/.local/share/$PROJECT_NAME"}
 BIN_DIR=${CODE_TYPER_BIN_DIR:-"$HOME/.local/bin"}
-REPO_URL=${CODE_TYPER_REPO_URL:-"https://github.com/kralicekgamer/code_typer/archive/refs/heads/main.tar.gz"}
+REPO_URL=${CODE_TYPER_REPO_URL:-"https://github.com/kralicekgamer/code_typer/archive/refs/heads/master.tar.gz"}
 REPO_DIR="$INSTALL_DIR/repo"
 VENV_DIR="$INSTALL_DIR/.venv"
 WRAPPER="$BIN_DIR/$PROJECT_NAME"
