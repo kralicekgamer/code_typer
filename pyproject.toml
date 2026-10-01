@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "typer-racer-cli"
+version = "0.1.0"
+description = "Test rychlosti psaní v terminálu – píšeš kód ze svého GitHub repa"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["textual>=0.80"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23"]
+
+[project.scripts]
+code_typer = "typer_racer_cli.app:main"
+typer-racer = "typer_racer_cli.app:main"
+
+[tool.setuptools.packages.find]
+include = ["typer_racer_cli*"]
+
+[tool.setuptools.package-data]
+typer_racer_cli = ["*.tcss"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

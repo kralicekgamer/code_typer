@@ -1,0 +1,70 @@
+SetupScreen, ResultsScreen {
+    align: center middle;
+}
+
+#panel {
+    width: 72;
+    max-width: 100%;
+    height: auto;
+    border: round $primary;
+    padding: 1 2;
+}
+
+#title {
+    text-style: bold;
+    color: $primary;
+    margin-bottom: 1;
+}
+
+#prompt {
+    margin-bottom: 1;
+}
+
+#panel OptionList {
+    height: auto;
+    max-height: 12;
+    margin-top: 1;
+}
+
+#status {
+    margin-top: 1;
+    color: $text-muted;
+}
+
+#status.error {
+    color: $error;
+}
+
+#help {
+    dock: bottom;
+    height: 1;
+    padding: 0 2;
+    color: $text-muted;
+}
+
+#stats {
+    dock: top;
+    height: 1;
+    padding: 0 2;
+    background: $boost;
+}
+
+#code {
+    height: 1fr;
+    padding: 1 2;
+}
+
+#headline {
+    text-style: bold;
+    color: $success;
+    margin-bottom: 1;
+}
+
+#record {
+    margin-top: 1;
+    color: $text-muted;
+}
+
+#record.record {
+    color: $warning;
+}
