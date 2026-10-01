@@ -5,7 +5,7 @@ A typing speed test for the terminal. Instead of plain text you type real code f
 ## Install
 
 ```sh
-curl -s https://raw.githubusercontent.com/kralicekgamer/code_typer/refs/heads/main/install.sh | bash
+curl -s https://raw.githubusercontent.com/kralicekgamer/code_typer/refs/heads/master/install.sh | bash
 ```
 
 The installer creates an isolated environment in `$HOME/.local/share/code_typer` and installs the command as `$HOME/.local/bin/code_typer`. Add `$HOME/.local/bin` to your `PATH` if the installer tells you to. It needs `python3`, `curl`, `tar` and `git`.
@@ -25,7 +25,7 @@ Indentation is skipped for you, press Enter at the end of each line. Tab loads a
 ## Uninstall
 
 ```sh
-curl -s https://raw.githubusercontent.com/kralicekgamer/code_typer/refs/heads/main/uninstall.sh | bash
+curl -s https://raw.githubusercontent.com/kralicekgamer/code_typer/refs/heads/master/uninstall.sh | bash
 ```
 
 The uninstall script removes the wrapper, the installation directory, the cached repos and your saved scores.
